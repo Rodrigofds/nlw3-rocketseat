@@ -3,41 +3,6 @@
     min-height: 100vh;
 }
 
-aside.sidebar {
-    position: fixed;
-    height: 100%;
-    padding: 32px 24px; /* 3.2rem 2.4rem */ 
-    background: #15C3D6;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-aside.sidebar footer button {
-    width: 48px;
-    height: 48px;
-    border: none;
-    background: #12AFCB;
-    border-radius: 1.6rem;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: background-color 0.2s;
-}
-
-aside.sidebar footer button:hover {
-    background: #17D6EB;
-}
-
-.with-sidebar {
-    padding: 110px;
-}
-
 main {
     flex: 1;
 }
@@ -45,14 +10,13 @@ main {
 /* Details */
 .orphanage-details {
     width: 70rem;
-    margin: 6.4rem auto;
+    margin: auto;
     background: white;
     border: 1px solid #D3E2E5;
-
     border-radius: 2rem;
-
     overflow: hidden;
 }
+
 .orphanage-details > img {
     width: 100%;
     height: 30rem;
@@ -69,15 +33,11 @@ main {
 .images button {
     border: 0;
     background: none;
-
     height: 8.8rem;
     cursor: pointer;
     border-radius: 2rem;
-
     overflow: hidden;
-
     opacity: 0.6;
-
     transition: opacity 0.2s;
 }
 
@@ -110,44 +70,11 @@ main {
     margin-top: 2.4rem;
 }
 
-
-/* Map */
-.map-container {
-    margin-top: 6.4rem;
-    background:#E6F7FB;
-    border: 1px solid #B3dae2;
-    border-radius: 2rem;
-}
-
-#mapid {
-    width: 100%;
-    height: 28rem;
-}
-
-.map-container footer {
-    padding: 2rem 0;
-
-    text-align: center;
-}
-
-.map-container footer a {
-    color: #0089a5;
-    text-decoration: none;
-}
-
-.map-container .leaflet-container {
-    border-bottom: 1px solid #DDE3F0;
-    border-radius: 2rem;
-}
-
 .orphanage-details-content hr {
     width: 100%;
     height: 1px;
-
     border: 0;
-
     background: #D3E2E6;
-
     margin: 6.4rem 0;
 }
 
@@ -160,7 +87,6 @@ main {
 
 .open-details {
     margin-top: 2.4rem;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -172,7 +98,6 @@ main {
 
 .open-details img {
     display: block;
-
     margin-bottom: 2rem;
 }
 
@@ -180,7 +105,6 @@ main {
     background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
     border: 1px solid #B3DAE2;
     border-radius: 20px;
-
     color: #5C8599;
 }
 
@@ -188,34 +112,5 @@ main {
     background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
     border: 1px solid #A1E9C5;
     border-radius: 20px;
-
     color: #37C77F;
-}
-
-.primary-button {
-    margin-top: 6.4rem;
-
-    width: 100%;
-    height: 6.4rem;
-    border: 0;
-    border-radius: 2rem;
-
-    cursor: pointer;
-
-    background: #3CDC8C;
-    color: white;
-
-    display:flex;
-    align-items: center;
-    justify-content: center;    
-
-    transition: background-color .2s;
-}
-
-.primary-button:hover {
-    background:#36CF82;
-}
-
-.primary-button img{
-    margin-left: 1.6rem;
 }

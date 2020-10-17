@@ -8,7 +8,7 @@ const options = {
 }
 
 // Create map
-const map = L.map('mapid', options).setView([-8.0467394,-34.9235161], 14);
+const map = L.map('mapid', options).setView([-8.0467394,-34.9235161], 14)
 
 // Create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
@@ -22,12 +22,10 @@ const icon = L.icon({
 })
 
 // Create and add marker
-L
-.marker([-8.0467394,-34.9235161], { icon })
+L.marker([-8.0467394,-34.9235161], { icon })
 .addTo(map)
 
 /* Image gallery */
-
 function selectImage(event) {
     const button = event.currentTarget
  
