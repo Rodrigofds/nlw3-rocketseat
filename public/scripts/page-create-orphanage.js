@@ -69,14 +69,16 @@ function deleteField(event){
 // Select Yes or No button
 function toggleSelect(event){
     // remove the .active class in both buttons
-    document.querySelectorAll('.button-select button')
-    .forEach(button => button.classList.remove('active'))
-
-    console.log(event.currentTarget)
+    document.querySelectorAll('.button-select button').forEach(function(button) {
+        button.classList.remove('active')
+    })
+   
     // add the .active class to clicked button
-    //const button = event.currentTarget
-    //button.classList.add('active')
+  
+    const button = event.currentTarget
+    button.classList.add('active')
 
+    
     // update the hidden input with the selected value
     const input = document.querySelector('[name="open_on_weekends"]')
 
